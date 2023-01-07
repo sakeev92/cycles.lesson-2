@@ -116,10 +116,10 @@ public class Main {
     public static void task8() {
         System.out.println("Задача 8");
         int cometFliesYears = 79;
-        for (cometFliesYears = 0; cometFliesYears <= 2122; cometFliesYears = cometFliesYears + 79) {
-            if (cometFliesYears >= 1822)
+        for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
+            if (yearCometAppearance >= 1822)
 
-            System.out.println(cometFliesYears);
+                System.out.println(yearCometAppearance);
         }
     }
 }
