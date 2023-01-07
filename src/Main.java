@@ -58,15 +58,14 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         int salary = 15000;
-        float total = 0f;
-        int i = 0;
+        int month = 0;
         float percent = 1.07f;
-        while (total <= 2_459_000) {
-            i++;
-            total = (total + salary) * (percent);
+        while (salary <= 2_459_000) {
+            month++;
+            salary = (int) (salary * percent);
 
 
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + salary + " рублей");
         }
     }
 
@@ -74,31 +73,29 @@ public class Main {
     public static void task5() {
         System.out.println("Задача 5");
         int salary = 15000;
-        float total = 0f;
-        int i = 0;
+        int month = 0;
         float percent = 1.07f;
-        while (total <= 2_459_000) {
-            i++;
-            total = (total + salary) * (percent);
-            if (i % 6 == 0) {
+        while (salary <= 2_459_000) {
+            month++;
+            salary = (int) (salary * percent);
+            if (month % 6 == 0) {
 
-                System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + salary + " рублей");
             }
         }
     }
 
     public static void task6() {
         System.out.println("Задача 6");
-        float salary = 15000f;
-        int total = 0;
-        int i = 0;
-        float percent = 1.07f;
-        while (i <= 109) {
-            i++;
-            total = (int) ((total + salary) * (percent));
-            if (i % 6 == 0) {
+        int salary = 15000;
+        int month = 0;
+        //float percent = 1.07f;
+        while (month <= 109) {
+            month++;
+            salary = (int) (salary * 1.07);
+            if (month % 6 == 0) {
 
-                System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + salary + " рублей");
             }
         }
     }
@@ -114,7 +111,6 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        int cometFliesYears = 79;
         for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
             if (yearCometAppearance >= 1822)
 
