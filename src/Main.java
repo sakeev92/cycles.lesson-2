@@ -90,12 +90,12 @@ public class Main {
     public static void task6() {
         System.out.println("Задача 6");
         float salary = 15000f;
-        float total = 0f;
+        int total = 0;
         int i = 0;
         float percent = 1.07f;
         while (i <= 109) {
             i++;
-            total = (total + salary) * (percent);
+            total = (int) ((total + salary) * (percent));
             if (i % 6 == 0) {
 
                 System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
@@ -106,20 +106,23 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
         int day = 5;
-        while (day < 30) {
-            day = day + 7;
-            {
+        for (day = 5; day <= 31; day = day + 7) {
 
-                System.out.println("Сегодня пятница, " + day + " -е число. Необходимо подготовить отчет");
-            }
+            System.out.println("Сегодня пятница, " + day + " -е число. Необходимо подготовить отчет");
         }
     }
 
+
     public static void task8() {
         System.out.println("Задача 8");
+        int cometFliesYears = 79;
+        for (cometFliesYears = 0; cometFliesYears <= 2122; cometFliesYears = cometFliesYears + 79) {
+            if (cometFliesYears >= 1822)
 
-            }
+            System.out.println(cometFliesYears);
         }
+    }
+}
 
 
 
