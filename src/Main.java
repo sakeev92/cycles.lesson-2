@@ -112,7 +112,6 @@ public class Main {
         }
     }
 
-
     public static void task8() {
         System.out.println("Задача 8");
         int cometFliesYears = 79;
