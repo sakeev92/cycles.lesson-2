@@ -75,7 +75,7 @@ public class Main {
         int salary = 15000;
         int month = 0;
         float percent = 1.07f;
-        while (salary <= 2_459_000) {
+        while (salary <= 12_000_000) {
             month++;
             salary = (int) (salary * percent);
             if (month % 6 == 0) {
