@@ -45,8 +45,8 @@ public class Main {
         System.out.println();
         System.out.println("Задача 3");
         int populationY = 12_000_000;
-        int theBirthRateIs = 17; // на 1_000
-        int mortality = 8; // на 1_000
+        int theBirthRateIs = 17;
+        int mortality = 8;
         int dif = theBirthRateIs - mortality;
         for (int i = 1; i <= 10; i++) {
             populationY += populationY * dif / 1000;
@@ -60,7 +60,7 @@ public class Main {
         int salary = 15000;
         int month = 0;
         float percent = 1.07f;
-        while (salary <= 2_459_000) {
+        while (salary <= 12_000_000) {
             month++;
             salary = (int) (salary * percent);
 
@@ -75,7 +75,7 @@ public class Main {
         int salary = 15000;
         int month = 0;
         float percent = 1.07f;
-        while (salary <= 2_459_000) {
+        while (salary <= 12_000_000) {
             month++;
             salary = (int) (salary * percent);
             if (month % 6 == 0) {
@@ -111,10 +111,20 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
-            if (yearCometAppearance >= 1822)
+        //Решение вариант 1
+        //for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
+         //   if (yearCometAppearance >= 1822)
 
-                System.out.println(yearCometAppearance);
+          //      System.out.println(yearCometAppearance);
+        //Решение вариант 2
+        int curentYear = 2023;
+        int startYear = curentYear - 200;
+        int finalYear = curentYear + 100;
+
+        for (int i = startYear; i <= finalYear; ++i){
+            if (i % 79 == 0){
+                System.out.println(i);
+            }
         }
     }
 }
