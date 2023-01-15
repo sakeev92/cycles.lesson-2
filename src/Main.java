@@ -111,10 +111,20 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задача 8");
-        for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
-            if (yearCometAppearance >= 1822)
+        //Решение вариант 1
+        //for (int yearCometAppearance = 0; yearCometAppearance <= 2122; yearCometAppearance = yearCometAppearance + 79) {
+         //   if (yearCometAppearance >= 1822)
 
-                System.out.println(yearCometAppearance);
+          //      System.out.println(yearCometAppearance);
+        //Решение вариант 2
+        int curentYear = 2023;
+        int startYear = curentYear - 200;
+        int finalYear = curentYear + 100;
+
+        for (int i = startYear; i <= finalYear; ++i){
+            if (i % 79 == 0){
+                System.out.println(i);
+            }
         }
     }
 }
